@@ -1,0 +1,751 @@
+<!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="8277489" data-tilda-page-id="41975832" data-tilda-page-alias="home" data-tilda-formskey="1cdbf2ce5a27eb1bd37d434728277489" data-tilda-cookie="no" data-tilda-lazy="yes" data-tilda-project-lang="RU" data-tilda-root-zone="com" data-tilda-project-headcode="yes" data-tilda-ts="y"><!--header--><header id="t-header" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="8277489" data-tilda-page-id="42198970" data-tilda-page-alias="header" data-tilda-formskey="1cdbf2ce5a27eb1bd37d434728277489" data-tilda-cookie="no" data-tilda-lazy="yes" data-tilda-project-lang="RU" data-tilda-root-zone="com" data-tilda-project-headcode="yes" ><div id="rec682160102" class="r t-rec" style=" " data-animationappear="off" data-record-type="602" ><!-- T602 --><div class="t602"><div class="t602__indicator" style=""></div> </div><script>t_onReady(function () {
+t_onFuncLoad('t602_init', function () {
+t602_init('682160102');
+});
+});</script></div><div id="rec682160423" class="r t-rec" style=" " data-animationappear="off" data-record-type="257" ><!-- T228 --><div id="nav682160423marker"></div><div class="tmenu-mobile" ><div class="tmenu-mobile__container"><div class="tmenu-mobile__text t-name t-name_md" field="menu_mob_title">&nbsp;</div><button type="button" 
+class="t-menuburger t-menuburger_first " 
+aria-label="Навигационное меню" 
+aria-expanded="false"><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span></button><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+burger.addEventListener('click', function() {
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t466__container') &&
+!burger.closest('.t204__burger') &&
+!burger.closest('.t199__js__menu-toggler')) {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+}
+});
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+menu.addEventListener('clickedAnchorInTooltipMenu', function () {
+burger.classList.remove('t-menuburger-opened');
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('682160423');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+padding: 0;
+border: none;
+background-color: transparent;
+outline: none;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: transform .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </div></div><style>.tmenu-mobile {
+background-color: #111;
+display: none;
+width: 100%;
+top: 0;
+z-index: 990;
+}
+.tmenu-mobile_positionfixed {
+position: fixed;
+}
+.tmenu-mobile__text {
+color: #fff;
+}
+.tmenu-mobile__container {
+min-height: 64px;
+padding: 20px;
+position: relative;
+box-sizing: border-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.tmenu-mobile__list {
+display: block;
+}
+.tmenu-mobile__burgerlogo {
+display: inline-block;
+font-size: 24px;
+font-weight: 400;
+white-space: nowrap;
+vertical-align: middle;
+}
+.tmenu-mobile__imglogo {
+height: auto;
+display: block;
+max-width: 300px!important;
+box-sizing: border-box;
+padding: 0;
+margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+.tmenu-mobile__menucontent_hidden {
+display: none;
+height: 100%;
+}
+.tmenu-mobile {
+display: block;
+}
+}
+@media screen and (max-width: 980px) {
+#rec682160423 .t-menuburger {
+-webkit-order: 1;
+-ms-flex-order: 1;
+order: 1;
+}
+}</style><style> #rec682160423 .tmenu-mobile__burgerlogo a { color: #ffffff; }</style><style> #rec682160423 .tmenu-mobile__burgerlogo__title { color: #ffffff; }</style><div id="nav682160423" class="t228 t228__positionabsolute tmenu-mobile__menucontent_hidden" style="background-color: rgba(0,0,0,0.60); height:70px; " data-bgcolor-hex="#000000" data-bgcolor-rgba="rgba(0,0,0,0.60)" data-navmarker="nav682160423marker" data-appearoffset="" data-bgopacity-two="" data-menushadow="" data-menushadow-css="" data-bgopacity="0.60" data-menu-items-align="left" data-menu="yes"><div class="t228__maincontainer t228__c12collumns" style="height:70px;"><div class="t228__padding40px"></div><div class="t228__leftside"></div><div class="t228__centerside t228__menualign_left"><nav class="t228__centercontainer"><ul role="list" class="t228__list t-menu__list"><li class="t228__list_item" 
+style="padding:0 15px 0 0;"><a class="t-menu__link-item" 
+href="/" data-menu-submenu-hook="" data-menu-item-number="1"
+>Главная</a></li><li class="t228__list_item" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="/about" data-menu-submenu-hook="" data-menu-item-number="2"
+>О нас</a></li><li class="t228__list_item" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="/dostavka" data-menu-submenu-hook="" data-menu-item-number="3"
+>Доставка</a></li><li class="t228__list_item" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="/page42185573.html" data-menu-submenu-hook="" data-menu-item-number="4"
+>Контакты</a></li><li class="t228__list_item" 
+style="padding:0 0 0 15px;"><a class="t-menu__link-item" 
+href="/catalog" data-menu-submenu-hook="" data-menu-item-number="5"
+>КАТАЛОГ</a></li></ul></nav></div><div class="t228__rightside"><div class="t228__rightcontainer"><div class="t228__right_descr"><a href="tel:+79254955244" style="color: rgb(255, 255, 255);"><strong>8-925-495-52-44</strong></a></div><div class="t-sociallinks"><ul role="list" class="t-sociallinks__wrapper" aria-label="Соц. сети"><!-- new soclinks --><li class="t-sociallinks__item t-sociallinks__item_whatsapp"><a href="https://wa.me/79254955244?text=%D0%94%D0%BE%D0%B1%D1%80%D0%BE%D0%B3%D0%BE%20%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8%20%D1%81%D1%83%D1%82%D0%BE%D0%BA%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%21" target="_blank" rel="nofollow" aria-label="WhatsApp" title="WhatsApp" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" role="presentation" width=30px height=30px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100ZM69.7626 28.9928C64.6172 23.841 57.7739 21.0027 50.4832 21C35.4616 21 23.2346 33.2252 23.2292 48.2522C23.2274 53.0557 24.4823 57.7446 26.8668 61.8769L23 76L37.4477 72.2105C41.4282 74.3822 45.9107 75.5262 50.4714 75.528H50.4823C65.5029 75.528 77.7299 63.301 77.7363 48.2749C77.7408 40.9915 74.9089 34.1446 69.7626 28.9928ZM62.9086 53.9588C62.2274 53.6178 58.8799 51.9708 58.2551 51.7435C57.6313 51.5161 57.1766 51.4024 56.7228 52.0845C56.269 52.7666 54.964 54.2998 54.5666 54.7545C54.1692 55.2092 53.7718 55.2656 53.0915 54.9246C52.9802 54.8688 52.8283 54.803 52.6409 54.7217C51.6819 54.3057 49.7905 53.4855 47.6151 51.5443C45.5907 49.7382 44.2239 47.5084 43.8265 46.8272C43.4291 46.1452 43.7837 45.7769 44.1248 45.4376C44.3292 45.2338 44.564 44.9478 44.7987 44.662C44.9157 44.5194 45.0328 44.3768 45.146 44.2445C45.4345 43.9075 45.56 43.6516 45.7302 43.3049C45.7607 43.2427 45.7926 43.1776 45.8272 43.1087C46.0545 42.654 45.9409 42.2565 45.7708 41.9155C45.6572 41.6877 45.0118 40.1167 44.4265 38.6923C44.1355 37.984 43.8594 37.3119 43.671 36.8592C43.1828 35.687 42.6883 35.69 42.2913 35.6924C42.2386 35.6928 42.1876 35.6931 42.1386 35.6906C41.7421 35.6706 41.2874 35.667 40.8336 35.667C40.3798 35.667 39.6423 35.837 39.0175 36.5191C38.9773 36.5631 38.9323 36.6111 38.8834 36.6633C38.1738 37.4209 36.634 39.0648 36.634 42.2002C36.634 45.544 39.062 48.7748 39.4124 49.2411L39.415 49.2444C39.4371 49.274 39.4767 49.3309 39.5333 49.4121C40.3462 50.5782 44.6615 56.7691 51.0481 59.5271C52.6732 60.2291 53.9409 60.6475 54.9303 60.9612C56.5618 61.4796 58.046 61.4068 59.22 61.2313C60.5286 61.0358 63.2487 59.5844 63.8161 57.9938C64.3836 56.4033 64.3836 55.0392 64.2136 54.7554C64.0764 54.5258 63.7545 54.3701 63.2776 54.1395C63.1633 54.0843 63.0401 54.0247 62.9086 53.9588Z" fill="#ffffff"/></svg></a></li><li class="t-sociallinks__item t-sociallinks__item_telegram"><a href="/@miniramki" target="_blank" rel="nofollow" aria-label="Telegram" title="Telegram" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" role="presentation" width=30px height=30px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm21.977-68.056c.386-4.38-4.24-2.576-4.24-2.576-3.415 1.414-6.937 2.85-10.497 4.302-11.04 4.503-22.444 9.155-32.159 13.734-5.268 1.932-2.184 3.864-2.184 3.864l8.351 2.577c3.855 1.16 5.91-.129 5.91-.129l17.988-12.238c6.424-4.38 4.882-.773 3.34.773l-13.49 12.882c-2.056 1.804-1.028 3.35-.129 4.123 2.55 2.249 8.82 6.364 11.557 8.16.712.467 1.185.778 1.292.858.642.515 4.111 2.834 6.424 2.319 2.313-.516 2.57-3.479 2.57-3.479l3.083-20.226c.462-3.511.993-6.886 1.417-9.582.4-2.546.705-4.485.767-5.362Z" fill="#ffffff"/></svg></a></li><li class="t-sociallinks__item t-sociallinks__item_instagram"><a href="https://instagram.com/miniramki?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="nofollow" aria-label="Instagram" title="Instagram" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" role="presentation" width=30px height=30px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100ZM25 39.3918C25 31.4558 31.4566 25 39.3918 25H60.6082C68.5442 25 75 31.4566 75 39.3918V60.8028C75 68.738 68.5442 75.1946 60.6082 75.1946H39.3918C31.4558 75.1946 25 68.738 25 60.8028V39.3918ZM36.9883 50.0054C36.9883 42.8847 42.8438 37.0922 50.0397 37.0922C57.2356 37.0922 63.0911 42.8847 63.0911 50.0054C63.0911 57.1252 57.2356 62.9177 50.0397 62.9177C42.843 62.9177 36.9883 57.1252 36.9883 50.0054ZM41.7422 50.0054C41.7422 54.5033 45.4641 58.1638 50.0397 58.1638C54.6153 58.1638 58.3372 54.5041 58.3372 50.0054C58.3372 45.5066 54.6145 41.8469 50.0397 41.8469C45.4641 41.8469 41.7422 45.5066 41.7422 50.0054ZM63.3248 39.6355C65.0208 39.6355 66.3956 38.2606 66.3956 36.5646C66.3956 34.8687 65.0208 33.4938 63.3248 33.4938C61.6288 33.4938 60.2539 34.8687 60.2539 36.5646C60.2539 38.2606 61.6288 39.6355 63.3248 39.6355Z" fill="#ffffff"/></svg></a></li><!-- /new soclinks --></ul></div></div></div><div class="t228__padding40px"></div></div></div><style>@media screen and (max-width: 980px) {
+#rec682160423 .t228 {
+position: static;
+}
+}</style><script>window.addEventListener('resize', t_throttle(function () {
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('682160423', '.t228');
+});
+}));
+t_onReady(function () {
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks('.t228__list_item a');
+});
+t_onFuncLoad('t228__init', function () {
+t228__init('682160423');
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('682160423', '.t228');
+});
+t_onFuncLoad('t_menu__interactFromKeyboard', function () {
+t_menu__interactFromKeyboard('682160423');
+});
+t_onFuncLoad('t_menu__createMobileMenu', function () {
+t_menu__createMobileMenu('682160423', '.t228');
+});
+});</script><!--[if IE 8]><style>#rec682160423 .t228 {
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9000000', endColorstr='#D9000000');
+}</style><![endif]--><style>#rec682160423 .t-menu__link-item{
+-webkit-transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+}
+#rec682160423 .t-menu__link-item.t-active:not(.t978__menu-link){
+color:#ffffff !important; }
+#rec682160423 .t-menu__link-item:not(.t-active):not(.tooltipstered):hover {
+color: #da1818 !important; }
+#rec682160423 .t-menu__link-item:not(.t-active):not(.tooltipstered):focus-visible{
+color: #da1818 !important; }
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec682160423 .t-menu__link-item,
+#rec682160423 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style><style> #rec682160423 .t228__leftcontainer a { color: #ffffff; } #rec682160423 a.t-menu__link-item { font-size: 18px; color: #ffffff; font-weight: 500; } #rec682160423 .t228__right_langs_lang a { font-size: 18px; color: #ffffff; font-weight: 500; } #rec682160423 .t228__right_descr { font-size: 28px; color: #ffffff; font-weight: 600; }</style><style> #rec682160423 .t228__logo { color: #ffffff; }</style></div></header><!--/header--><div id="rec680236954" class="r t-rec" style=" " data-animationappear="off" data-record-type="396" ><!-- T396 --><style>#rec680236954 .t396__artboard {min-height: 550px;height: 100vh; background-color: #ffffff; }#rec680236954 .t396__filter {min-height: 550px;height: 100vh; background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0,0,0,0.7)), to(rgba(0,0,0,0.8)) );background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.8));background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.8));will-change: transform;}#rec680236954 .t396__carrier{min-height: 550px;height: 100vh;background-position: center center;background-attachment: scroll;background-size: cover;background-repeat: no-repeat;}@media screen and (max-width: 1199px) {#rec680236954 .t396__artboard,#rec680236954 .t396__filter,#rec680236954 .t396__carrier {}#rec680236954 .t396__filter {}#rec680236954 .t396__carrier {background-attachment: scroll;}}@media screen and (max-width: 959px) {#rec680236954 .t396__artboard,#rec680236954 .t396__filter,#rec680236954 .t396__carrier {}#rec680236954 .t396__filter {}#rec680236954 .t396__carrier {background-attachment: scroll;}}@media screen and (max-width: 639px) {#rec680236954 .t396__artboard,#rec680236954 .t396__filter,#rec680236954 .t396__carrier {min-height: 550px;}#rec680236954 .t396__filter {}#rec680236954 .t396__carrier {background-attachment: scroll;}}@media screen and (max-width: 479px) {#rec680236954 .t396__artboard,#rec680236954 .t396__filter,#rec680236954 .t396__carrier {min-height: 480px;}#rec680236954 .t396__filter { background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(255,255,255,0)), to(rgba(64,73,78,0.75)) );background-image: -webkit-linear-gradient(top, rgba(255,255,255,0), rgba(64,73,78,0.75));background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(64,73,78,0.75));background-color: unset;will-change: transform;}#rec680236954 .t396__carrier {background-attachment: scroll;}} #rec680236954 .tn-elem[data-elem-id="1702033512409"] { z-index: 2; top: calc(50vh - 325px + 0px);left: calc(50% - 292px + 307px);width: 584px;height:650px;}#rec680236954 .tn-elem[data-elem-id="1702033512409"] .tn-atom { background-color: #a7211f; background-position: center center;background-size: cover;background-repeat: no-repeat;border-color: transparent ;border-style: solid ; }@media screen and (max-width: 1199px) {#rec680236954 .tn-elem[data-elem-id="1702033512409"] {left: calc(50% - 292px + 264px);width: 497px;}}@media screen and (max-width: 959px) {#rec680236954 .tn-elem[data-elem-id="1702033512409"] {top: calc(275px - 325px + -1px);left: calc(50% - 292px + 143px);width: 393px;height: 553px;}}@media screen and (max-width: 639px) {#rec680236954 .tn-elem[data-elem-id="1702033512409"] {top: calc(275px - 325px + 0px);left: calc(50% - 292px + 178px);width: 326px;height: 550px;}}@media screen and (max-width: 479px) {#rec680236954 .tn-elem[data-elem-id="1702033512409"] {top: calc(275px - 325px + -134px);left: calc(50% - 292px + 0px);width: 320px;height: 321px;}#rec680236954 .tn-elem[data-elem-id="1702033512409"] .tn-atom { background-color: #243240; }} #rec680236954 .tn-elem[data-elem-id="1470209944682"] { color: #ff0000; text-align: center; z-index: 3; top: calc(50vh - 0px + -246px);left: calc(50% - 318.5px + -290px);width: 637px;}#rec680236954 .tn-elem[data-elem-id="1470209944682"] .tn-atom { color: #ff0000; font-size: 72px; font-family: 'Arial',Arial,sans-serif; line-height: 1.2; font-weight: 700; letter-spacing: 1px; background-position: center center;border-color: transparent ;border-style: solid ; }@media screen and (max-width: 1199px) {#rec680236954 .tn-elem[data-elem-id="1470209944682"] {top: calc(275px - 0px + -246px);left: calc(50% - 318.5px + -246px);width: 588px;}#rec680236954 .tn-elem[data-elem-id="1470209944682"] .tn-atom { font-size: 48px; }}@media screen and (max-width: 959px) {#rec680236954 .tn-elem[data-elem-id="1470209944682"] {top: calc(275px - 0px + -230px);left: calc(50% - 318.5px + 10px);width: 620px;}#rec680236954 .tn-elem[data-elem-id="1470209944682"] .tn-atom { font-size: 60px; line-height: 1.2; }}@media screen and (max-width: 639px) {#rec680236954 .tn-elem[data-elem-id="1470209944682"] {top: calc(275px - 0px + -222px);left: calc(50% - 318.5px + -95px);width: 271px;}#rec680236954 .tn-elem[data-elem-id="1470209944682"] .tn-atom { font-size: 30px; line-height: 1.05; }}@media screen and (max-width: 479px) {#rec680236954 .tn-elem[data-elem-id="1470209944682"] {top: calc(275px - 0px + -237px);left: calc(50% - 318.5px + 13px);width: 295px;}#rec680236954 .tn-elem[data-elem-id="1470209944682"] .tn-atom { font-size: 25px; }} #rec680236954 .tn-elem[data-elem-id="1470210011265"] { color: #ffffff; text-align: center; z-index: 4; top: calc(50vh - 0px + -53px);left: calc(50% - 295px + -298px);width: 590px;}#rec680236954 .tn-elem[data-elem-id="1470210011265"] .tn-atom { color: #ffffff; font-size: 22px; font-family: 'Arial',Arial,sans-serif; line-height: 1.5; font-weight: 400; background-position: center center;border-color: transparent ;border-style: solid ; }@media screen and (max-width: 1199px) {#rec680236954 .tn-elem[data-elem-id="1470210011265"] {top: calc(275px - 0px + -51px);left: calc(50% - 295px + -283px);width: 358px;}#rec680236954 .tn-elem[data-elem-id="1470210011265"] .tn-atom { font-size: 20px; line-height: 1.55; }}@media screen and (max-width: 959px) {#rec680236954 .tn-elem[data-elem-id="1470210011265"] {top: calc(275px - 0px + -50px);left: calc(50% - 295px + -133px);width: 374px;}#rec680236954 .tn-elem[data-elem-id="1470210011265"] .tn-atom { letter-spacing: 0.5px; }}@media screen and (max-width: 639px) {#rec680236954 .tn-elem[data-elem-id="1470210011265"] {top: calc(275px - 0px + -26px);left: calc(50% - 295px + -112px);width: 255px;}#rec680236954 .tn-elem[data-elem-id="1470210011265"] .tn-atom { font-size: 14px; }}@media screen and (max-width: 479px) {#rec680236954 .tn-elem[data-elem-id="1470210011265"] {top: calc(275px - 0px + 70px);left: calc(50% - 295px + 0px);width: 290px;}} #rec680236954 .tn-elem[data-elem-id="1473846124811"] { color: #ffffff; text-align: left; z-index: 5; top: calc(50vh - 43.5px + 133px);left: calc(50% - 135.5px + -284px);width: 271px;height:87px;}#rec680236954 .tn-elem[data-elem-id="1473846124811"] .tn-atom { color: #ffffff; font-size: 36px; font-family: 'Arial',Arial,sans-serif; line-height: 1.55; font-weight: 600; border-width: 1px; border-radius: 30px; background-color: #ff6600; background-position: center center;border-color: transparent ;border-style: solid ; transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out; }@media screen and (max-width: 1199px) {#rec680236954 .tn-elem[data-elem-id="1473846124811"] {top: calc(275px - 43.5px + 139px);left: calc(50% - 135.5px + -274px);}}@media screen and (max-width: 959px) {#rec680236954 .tn-elem[data-elem-id="1473846124811"] {top: calc(275px - 43.5px + 176px);left: calc(50% - 135.5px + -125px);width: 249px;height: 114px;}#rec680236954 .tn-elem[data-elem-id="1473846124811"] .tn-atom { font-size: 31px; }}@media screen and (max-width: 639px) {#rec680236954 .tn-elem[data-elem-id="1473846124811"] {top: calc(275px - 43.5px + 137px);left: calc(50% - 135.5px + -114px);width: 208px;height: 77px;}#rec680236954 .tn-elem[data-elem-id="1473846124811"] .tn-atom { font-size: 27px; }}@media screen and (max-width: 479px) {#rec680236954 .tn-elem[data-elem-id="1473846124811"] {top: calc(275px - 43.5px + 165px);left: calc(50% - 135.5px + 5px);width: 216px;height: 75px;}#rec680236954 .tn-elem[data-elem-id="1473846124811"] {text-align: center;}#rec680236954 .tn-elem[data-elem-id="1473846124811"] .tn-atom { font-size: 26px; background-color: #243240; }} #rec680236954 .tn-elem[data-elem-id="1703079951621"] { color: #ff0000; z-index: 6; top: calc(50vh - 275px + 54px);left: calc(50% - 600px + 280px);width: 63px;}#rec680236954 .tn-elem[data-elem-id="1703079951621"] .tn-atom { color: #ff0000; font-size: 72px; font-family: 'TildaSans',Arial,sans-serif; line-height: 1.55; font-weight: 700; background-position: center center;border-color: transparent ;border-style: solid ; }@media screen and (max-width: 1199px) {#rec680236954 .tn-elem[data-elem-id="1703079951621"] {top: 37px;left: calc(50% - 480px + 170px);}}@media screen and (max-width: 959px) {#rec680236954 .tn-elem[data-elem-id="1703079951621"] {top: 66px;left: calc(50% - 320px + 136px);}}@media screen and (max-width: 639px) {#rec680236954 .tn-elem[data-elem-id="1703079951621"] {top: 47px;left: calc(50% - 240px + 90px);}}@media screen and (max-width: 479px) {#rec680236954 .tn-elem[data-elem-id="1703079951621"] {top: 30px;left: calc(50% - 160px + 122px);}#rec680236954 .tn-elem[data-elem-id="1703079951621"] {}#rec680236954 .tn-elem[data-elem-id="1703079951621"] .tn-atom { font-size: 48px; }}</style><div class='t396'><div class="t396__artboard" data-artboard-recid="680236954" data-artboard-screens="320,480,640,960,1200" data-artboard-height="550" data-artboard-valign="center" data-artboard-height_vh="100" data-artboard-upscale="grid" data-artboard-height-res-320="480" data-artboard-height-res-480="550" 
+><div class="t396__carrier" data-artboard-recid="680236954"></div><div class="t396__filter" data-artboard-recid="680236954"></div><div class='t396__elem tn-elem tn-elem__6802369541702033512409' data-elem-id='1702033512409' data-elem-type='shape' data-field-top-value="0" data-field-left-value="307" data-field-height-value="650" data-field-width-value="584" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-top-res-320-value="-134" data-field-left-res-320-value="0" data-field-height-res-320-value="321" data-field-width-res-320-value="320" data-field-top-res-480-value="0" data-field-left-res-480-value="178" data-field-height-res-480-value="550" data-field-width-res-480-value="326" data-field-top-res-640-value="-1" data-field-left-res-640-value="143" data-field-height-res-640-value="553" data-field-width-res-640-value="393" data-field-left-res-960-value="264" data-field-width-res-960-value="497" 
+><div class='tn-atom t-bgimg' data-original="images/tild3539-6630-4238-b232-316438383231__photo.png"
+></div></div><div class='t396__elem tn-elem tn-elem__6802369541470209944682 t-animate' data-elem-id='1470209944682' data-elem-type='text' data-field-top-value="-246" data-field-left-value="-290" data-field-width-value="637" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-animate-style="zoomin" data-animate-duration="3" data-animate-scale="2" data-animate-mobile="y" data-field-top-res-320-value="-237" data-field-left-res-320-value="13" data-field-width-res-320-value="295" data-field-top-res-480-value="-222" data-field-left-res-480-value="-95" data-field-width-res-480-value="271" data-field-top-res-640-value="-230" data-field-left-res-640-value="10" data-field-width-res-640-value="620" data-field-top-res-960-value="-246" data-field-left-res-960-value="-246" data-field-width-res-960-value="588" 
+><h1 class='tn-atom'field='tn_text_1470209944682'>Откидные Рамки</h1> </div><div class='t396__elem tn-elem tn-elem__6802369541470210011265' data-elem-id='1470210011265' data-elem-type='text' data-field-top-value="-53" data-field-left-value="-298" data-field-width-value="590" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-top-res-320-value="70" data-field-left-res-320-value="0" data-field-width-res-320-value="290" data-field-top-res-480-value="-26" data-field-left-res-480-value="-112" data-field-width-res-480-value="255" data-field-top-res-640-value="-50" data-field-left-res-640-value="-133" data-field-width-res-640-value="374" data-field-top-res-960-value="-51" data-field-left-res-960-value="-283" data-field-width-res-960-value="358" 
+><h3 class='tn-atom'field='tn_text_1470210011265'><ul><li>Собственное производство</li><li>7 лет на рынке</li><li>Более 3.000 довольных клиентов</li><li>Отправка по всей России</li></ul></h3> </div><div class='t396__elem tn-elem tn-elem__6802369541473846124811 t-animate' data-elem-id='1473846124811' data-elem-type='button' data-field-top-value="133" data-field-left-value="-284" data-field-height-value="87" data-field-width-value="271" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-style="zoomin" data-animate-duration="3" data-animate-scale="2" data-animate-mobile="y" data-field-top-res-320-value="165" data-field-left-res-320-value="5" data-field-height-res-320-value="75" data-field-width-res-320-value="216" data-field-top-res-480-value="137" data-field-left-res-480-value="-114" data-field-height-res-480-value="77" data-field-width-res-480-value="208" data-field-top-res-640-value="176" data-field-left-res-640-value="-125" data-field-height-res-640-value="114" data-field-width-res-640-value="249" data-field-top-res-960-value="139" data-field-left-res-960-value="-274" 
+><a class='tn-atom' href="tel:+79254955244" >8-925-495-52-44</a></div><div class='t396__elem tn-elem tn-elem__6802369541703079951621 t-animate' data-elem-id='1703079951621' data-elem-type='text' data-field-top-value="54" data-field-left-value="280" data-field-width-value="63" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-animate-style="fadeinup" data-animate-duration="3" data-animate-mobile="y" data-field-top-res-320-value="30" data-field-left-res-320-value="122" data-field-top-res-480-value="47" data-field-left-res-480-value="90" data-field-top-res-640-value="66" data-field-left-res-640-value="136" data-field-top-res-960-value="37" data-field-left-res-960-value="170" 
+><h2 class='tn-atom'field='tn_text_1703079951621'>24v</h2> </div></div> </div> <script>t_onReady(function () {
+t_onFuncLoad('t396_init', function () {
+t396_init('680236954');
+});
+});</script><!-- /T396 --></div><div id="rec680244639" class="r t-rec t-rec_pt_105 t-rec_pb_90" style="padding-top:105px;padding-bottom:90px; " data-animationappear="off" data-record-type="780" ><!-- T780 --><div class="t780"><div class="t-container js-product js-product-single " ><div class="t-col t-col_11 t-prefix_1 t780__img"><!-- gallery --><div class="t-slds" style="visibility: hidden;"><div class="t-slds__main"><div class="t-slds__container" ><div class="t-slds__items-wrapper t-slds_animated-slow " data-slider-transition="500" data-slider-with-cycle="true" data-slider-correct-height="true" data-auto-correct-mobile-width="false" data-slider-timeout="4000"><div class="t-slds__item t-slds__item_active" data-slide-index="1"><div class="t-slds__wrapper" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6639-3438-4366-b231-363764623836__1_.jpg"><meta itemprop="caption" content="Откидная рамка на прямом приводе"> <div class="t-slds__imgwrapper" bgimgfield="gi_img__0" data-zoom-target="0" data-zoomable="yes" data-img-zoom-url="images/tild6639-3438-4366-b231-363764623836__1_.jpg" ><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg js-product-img" data-original="images/tild6639-3438-4366-b231-363764623836__1_.jpg" style="padding-bottom:75%; background-image: url('images/tild6639-3438-4366-b231-363764623836__-__resizeb__20x__1_.jpg');"></div></div></div></div><div class="t-slds__item " data-slide-index="2"><div class="t-slds__wrapper" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/stor3734-3465-4834-a363-363036616139__80378290.png"><meta itemprop="caption" content="откидная рамка размеры"> <div class="t-slds__imgwrapper" bgimgfield="gi_img__1" data-zoom-target="1" data-zoomable="yes" data-img-zoom-url="images/stor3734-3465-4834-a363-363036616139__80378290.png" ><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg " data-original="images/stor3734-3465-4834-a363-363036616139__80378290.png" style="padding-bottom:75%; background-image: url('images/stor3734-3465-4834-a363-363036616139__-__resizeb__20x__80378290.png');"></div></div></div></div><div class="t-slds__item " data-slide-index="3"><div class="t-slds__wrapper" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6439-3334-4164-b631-353234366633__img_2731-pkim1tlpdb-.png"><meta itemprop="caption" content="Откидная рамка на прямом приводе"> <div class="t-slds__imgwrapper" bgimgfield="gi_img__2" data-zoom-target="2" data-zoomable="yes" data-img-zoom-url="images/tild6439-3334-4164-b631-353234366633__img_2731-pkim1tlpdb-.png" ><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg " data-original="images/tild6439-3334-4164-b631-353234366633__img_2731-pkim1tlpdb-.png" style="padding-bottom:75%; background-image: url('images/tild6439-3334-4164-b631-353234366633__-__resizeb__20x__img_2731-pkim1tlpdb-.png');"></div></div></div></div><div class="t-slds__item " data-slide-index="4"><div class="t-slds__wrapper" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/stor3264-6131-4331-b436-363339393763__66549222.png"><meta itemprop="caption" content="откидная рамка с кнопкой"> <div class="t-slds__imgwrapper" bgimgfield="gi_img__3" data-zoom-target="3" data-zoomable="yes" data-img-zoom-url="images/stor3264-6131-4331-b436-363339393763__66549222.png" ><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg " data-original="images/stor3264-6131-4331-b436-363339393763__66549222.png" style="padding-bottom:75%; background-image: url('images/stor3264-6131-4331-b436-363339393763__-__resizeb__20x__66549222.png');"></div></div></div></div><div class="t-slds__item " data-slide-index="5"><div class="t-slds__wrapper" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3031-3034-4131-b134-623737623662__img_2730-transformed.png"><meta itemprop="caption" content="Откидная рамка на прямом приводе"> <div class="t-slds__imgwrapper" bgimgfield="gi_img__4" data-zoom-target="4" data-zoomable="yes" data-img-zoom-url="images/tild3031-3034-4131-b134-623737623662__img_2730-transformed.png" ><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg " data-original="images/tild3031-3034-4131-b134-623737623662__img_2730-transformed.png" style="padding-bottom:75%; background-image: url('images/tild3031-3034-4131-b134-623737623662__-__resizeb__20x__img_2730-transformed.png');"></div></div></div></div><div class="t-slds__item " data-slide-index="6"><div class="t-slds__wrapper" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6233-6262-4438-b736-353937383761__12-24.jpeg"><meta itemprop="caption" content="Откидные рамки 24в, откидные рамки 12в"> <div class="t-slds__imgwrapper" bgimgfield="gi_img__5" data-zoom-target="5" data-zoomable="yes" data-img-zoom-url="images/tild6233-6262-4438-b736-353937383761__12-24.jpeg" ><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg " data-original="images/tild6233-6262-4438-b736-353937383761__12-24.jpeg" style="padding-bottom:75%; background-image: url('images/tild6233-6262-4438-b736-353937383761__-__resizeb__20x__12-24.jpeg');"></div></div></div></div></div><div class="t-slds__arrow_container "><li class="t-slds__arrow_wrapper t-slds__arrow_wrapper-left" data-slide-direction="left"><button 
+type="button" 
+class="t-slds__arrow t-slds__arrow-left t-slds__arrow-withbg" 
+aria-controls="carousel_680244639" 
+aria-disabled="false" 
+aria-label="Предыдущий слайд"
+style="width: 60px; height: 60px;background-color: rgba(255,255,255,1);"><div class="t-slds__arrow_body t-slds__arrow_body-left" style="width: 17px;"><svg role="presentation" focusable="false" style="display: block" viewBox="0 0 17.9 31" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline
+fill="none" 
+stroke="#1779fa"
+stroke-linejoin="butt" 
+stroke-linecap="butt"
+stroke-width="3" 
+points="1.5,1.5 15.5,15.5 1.5,29.5" 
+/></svg></div></button></li><li class="t-slds__arrow_wrapper t-slds__arrow_wrapper-right" data-slide-direction="right"><button 
+type="button" 
+class="t-slds__arrow t-slds__arrow-right t-slds__arrow-withbg" 
+aria-controls="carousel_680244639" 
+aria-disabled="false" 
+aria-label="Следующий слайд"
+style="width: 60px; height: 60px;background-color: rgba(255,255,255,1);"><div class="t-slds__arrow_body t-slds__arrow_body-right" style="width: 17px;"><svg role="presentation" focusable="false" style="display: block" viewBox="0 0 17.9 31" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline
+fill="none" 
+stroke="#1779fa"
+stroke-linejoin="butt" 
+stroke-linecap="butt"
+stroke-width="3" 
+points="1.5,1.5 15.5,15.5 1.5,29.5" 
+/></svg></div></button></li> </div></div></div><ul role="list" class="t-slds__bullet_wrapper"><li class="t-slds__bullet t-slds__bullet_active" data-slide-bullet-for="1"><button type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 1" 
+style=""></button></li><li class="t-slds__bullet " data-slide-bullet-for="2"><button type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 2" 
+style=""></button></li><li class="t-slds__bullet " data-slide-bullet-for="3"><button type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 3" 
+style=""></button></li><li class="t-slds__bullet " data-slide-bullet-for="4"><button type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 4" 
+style=""></button></li><li class="t-slds__bullet " data-slide-bullet-for="5"><button type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 5" 
+style=""></button></li><li class="t-slds__bullet " data-slide-bullet-for="6"><button type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 6" 
+style=""></button></li></ul></div><style type="text/css">#rec680244639 .t-slds__bullet_active .t-slds__bullet_body {
+background-color: #1779fa !important;
+}
+#rec680244639 .t-slds__bullet:hover .t-slds__bullet_body {
+background-color: #1779fa !important;
+}
+#rec680244639 .t-slds__bullet_body:focus-visible {
+background-color: #1779fa !important;
+}</style><!--/gallery --></div><div class="t780__separator t-clear"></div><div class="t-col t-col_6 t-prefix_3 t-align_center"><div class="t780__wrapper "><div class="t780__title-wrapper"><h2 class="t780__title t-heading t-heading_sm js-product-name" field="title">Откидная рамка на прямом приводе</h2> <div class="t780__title_small t-descr t-descr_xs"><span class=" js-product-sku notranslate" translate="no" field="title2">Откидная рамка на прямом приводе</span></div> </div><div class="t780__descr t-descr t-descr_xs" field="descr">Качественные материалы, лазерная резка металла, аргоновая сварка, более 6 лет на рынке и более 3.000 довольных клиентов.<br />8-925-495-52-44</div> <div class="t780__price-wrapper "><div class="t780__price t780__price-item t-name t-name_lg " style="margin-right:5px;"><div class="t780__price-value js-product-price notranslate " translate="off" field="price" data-redactor-toolbar="no">5990</div><div class="t780__price-currency js-product-price-currency">р.</div> </div><div class="t780__price_old t780__price-item t-name t-name_lg "><div class="t780__price-value " data-redactor-toolbar="no" field="price_old">6990</div><div class="t780__price-currency js-product-price-currency">р.</div> </div></div><div class="js-product-controls-wrapper"><div class="t-product__option js-product-option"><div class="t-product__option-title t-descr t-descr_xxs js-product-option-name" >Вольтаж</div><div class="t-product__option-variants"><select class="t-product__option-select t-descr t-descr_xxs js-product-option-variants"><option value="24v" data-product-variant-price="">24v</option><option value="12v" data-product-variant-price="">12v</option></select></div></div></div><div class="t780__btn-wrapper t1002__btns-wrapper t1002__btns-wrapper_center "><a href="#order" target="_blank" class="t780__btn t-btn t-btn_md " style="color:#ffffff;background-color:#1779fa;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;"
+><table role="presentation" style="width:100%; height:100%;"><tr><td class="js-store-prod-buy-btn-txt" >Купить</td></tr></table></a></div></div></div></div></div><script type="text/javascript">t_onReady(function () {
+t_onFuncLoad('t780_init', function () {
+t780_init('680244639');
+});
+});</script><style type="text/css">#rec680244639 .t-slds__bullet_active .t-slds__bullet_body {
+background-color: #1779fa !important;
+}
+#rec680244639 .t-slds__bullet:hover .t-slds__bullet_body {
+background-color: #1779fa !important;
+}</style></div><div id="rec680383186" class="r t-rec t-rec_pt_60 t-rec_pb_15" style="padding-top:60px;padding-bottom:15px;background-color:#f2f2f2; " data-record-type="255" data-bg-color="#f2f2f2"><!-- T225 --><div class="t225"><div class="t-container t-align_center"><div class="t-col t-col_10 t-prefix_1"><div class="t225__uptitle t-uptitle t-uptitle_sm" field="subtitle">Откидные рамки</div> <h2 class="t225__title t-title t-title_md" field="title">для грузовых авто</h2> <div class="t225__descr t-descr t-descr_xxl" field="descr">отправим в любую точку России</div> </div></div></div><style> #rec680383186 .t225__uptitle { text-transform: uppercase; }</style></div><div id="rec680383389" class="r t-rec t-rec_pt_90 t-rec_pb_90" style="padding-top:90px;padding-bottom:90px; " data-animationappear="off" data-record-type="604" ><!-- t604 --><div class="t604"><div class="t-slds" style="visibility: hidden;"><div class="t-container t-slds__main"><ul class="t-slds__arrow_container t-slds__arrow-nearpic"><li class="t-slds__arrow_wrapper t-slds__arrow_wrapper-left" data-slide-direction="left"><button 
+type="button" 
+class="t-slds__arrow t-slds__arrow-left t-slds__arrow-withbg" 
+aria-controls="carousel_680383389" 
+aria-disabled="false" 
+aria-label="Предыдущий слайд"
+style="width: 40px; height: 40px;background-color: rgba(232,232,232,1);"><div class="t-slds__arrow_body t-slds__arrow_body-left" style="width: 9px;"><svg role="presentation" focusable="false" style="display: block" viewBox="0 0 9.3 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline
+fill="none" 
+stroke="#000000"
+stroke-linejoin="butt" 
+stroke-linecap="butt"
+stroke-width="1" 
+points="0.5,0.5 8.5,8.5 0.5,16.5" 
+/></svg></div></button></li><li class="t-slds__arrow_wrapper t-slds__arrow_wrapper-right" data-slide-direction="right"><button 
+type="button" 
+class="t-slds__arrow t-slds__arrow-right t-slds__arrow-withbg" 
+aria-controls="carousel_680383389" 
+aria-disabled="false" 
+aria-label="Следующий слайд"
+style="width: 40px; height: 40px;background-color: rgba(232,232,232,1);"><div class="t-slds__arrow_body t-slds__arrow_body-right" style="width: 9px;"><svg role="presentation" focusable="false" style="display: block" viewBox="0 0 9.3 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline
+fill="none" 
+stroke="#000000"
+stroke-linejoin="butt" 
+stroke-linecap="butt"
+stroke-width="1" 
+points="0.5,0.5 8.5,8.5 0.5,16.5" 
+/></svg></div></button></li> </ul><div class="t-slds__container t-width t-width_10 t-margin_auto"><div class="t-slds__items-wrapper t-slds_animated-fast t-slds__witharrows" 
+id="carousel_680383389" data-slider-transition="300" data-slider-with-cycle="true" data-slider-correct-height="false" data-auto-correct-mobile-width="false" data-slider-arrows-nearpic="yes" 
+aria-roledescription="carousel" 
+aria-live="off"
+><div class="t-slds__item t-slds__item_active" data-slide-index="1" 
+role="group" 
+aria-roledescription="slide" 
+aria-hidden="false" 
+aria-label="1 из 3"
+><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6330-6164-4433-b261-313535353935__photo.png"><div class="t604__imgwrapper" bgimgfield="gi_img__0"><div class="t-slds__bgimg t-bgimg" data-original="images/tild6330-6164-4433-b261-313535353935__photo.png" 
+style="background-image: url('images/tild6330-6164-4433-b261-313535353935__-__resizeb__20x__photo.png');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div><div class="t604__play" data-slider-video-type="youtube" data-slider-video-url="Kascy9DHob8"><button 
+type="button" 
+class="t604__play_icon" 
+aria-label="Воспроизвести видео" 
+style="width: 70px; height: 70px;"
+><svg role="presentation" width="70px" height="70px" viewBox="0 0 60 60"><g stroke="none" stroke-width="1" fill="" fill-rule="evenodd"><g transform="translate(-691.000000, -3514.000000)" fill="#ffffff"><path d="M721,3574 C737.568542,3574 751,3560.56854 751,3544 C751,3527.43146 737.568542,3514 721,3514 C704.431458,3514 691,3527.43146 691,3544 C691,3560.56854 704.431458,3574 721,3574 Z M715,3534 L732,3544.5 L715,3555 L715,3534 Z"></path></g></g></svg></button></div><div class="t604__frame"></div></div></div></div></div><div class="t-slds__item" data-slide-index="2" 
+role="group" 
+aria-roledescription="slide" 
+aria-hidden="false" 
+aria-label="2 из 3"
+><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6236-3535-4261-b330-356364323831__123.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__1"><div class="t-slds__bgimg t-bgimg" data-original="images/tild6236-3535-4261-b330-356364323831__123.jpg"
+style="background-image: url('images/tild6236-3535-4261-b330-356364323831__-__resizeb__20x__123.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></div><div class="t-slds__item" data-slide-index="3" 
+role="group" 
+aria-roledescription="slide" 
+aria-hidden="false" 
+aria-label="3 из 3"
+><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3163-6464-4734-b138-633062383134____2023-05-22__132207.png"><div class="t604__imgwrapper" bgimgfield="gi_img__2"><div class="t-slds__bgimg t-bgimg" data-original="images/tild3163-6464-4734-b138-633062383134____2023-05-22__132207.png"
+style="background-image: url('images/tild3163-6464-4734-b138-633062383134__-__resizeb__20x____2023-05-22__132207.png');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></div></div></div><ul class="t-slds__bullet_wrapper"><li class="t-slds__bullet t-slds__bullet_active" data-slide-bullet-for="1"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 1" 
+aria-current="true" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="2"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 2" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="3"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 3" 
+style="background-color: #c7c7c7;"></button></li></ul><div class="t-slds__caption__container"></div></div></div></div><script>t_onReady(function() {
+t_onFuncLoad('t_sldsInit', function() {
+t_sldsInit('680383389');
+});
+t_onFuncLoad('t604_init', function () {
+t604_init('680383389');
+});
+t_onFuncLoad('t_slds_UpdateSliderHeight', function () {
+t_slds_UpdateSliderHeight('680383389');
+});
+t_onFuncLoad('t604__UpdateSliderArrowsHeight', function () {
+t604__UpdateSliderArrowsHeight('680383389');
+});
+});</script><style>#rec680383389 .t-slds__bullet_active .t-slds__bullet_body {
+background-color: #222 !important;
+}
+#rec680383389 .t-slds__bullet:hover .t-slds__bullet_body {
+background-color: #222 !important;
+}</style></div><div id="rec680245990" class="r t-rec t-rec_pt_150 t-rec_pb_150" style="padding-top:150px;padding-bottom:150px;background-color:#f2f2f2; " data-record-type="509" data-bg-color="#f2f2f2"><!-- t509 --><div class="t509"><div class="t-section__container t-container"><div class="t-col t-col_12"><div class="t-section__topwrapper t-align_center"><h2 class="t-section__title t-title t-title_xs" field="btitle">Чем наши откидные рамки</h2> <div class="t-section__descr t-descr t-descr_xl t-margin_auto" field="bdescr">надёжнее других:</div> </div></div></div><div class="t-card__container t-container"><div class="t509__colwrapper t-col t-col_12 "><div class="t-item"><div class="t509__col t-col t-col_6 t509__mobileimg" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6463-6561-4263-b366-646261613261__-__resizeb__20x__photo.jpeg"><div class="t509__blockimg t-bgimg" data-original="images/tild6463-6561-4263-b366-646261613261__photo.jpeg" 
+bgimgfield="li_img__1476897695209" data-image-width="700" data-image-height="550px" 
+style="background-image:url('images/tild6463-6561-4263-b366-646261613261__-__resizeb__20x__photo.jpeg');"
+></div></div><div class="t509__col t-col t-col_6 t509__leftcol"><div class="t509__textwrapper t-align_left" style=""><div class="t509__content t-valign_middle"><div class="t509__box"><h3 
+class="t-card__title t-heading t-heading_xs t-margin_auto" 
+id="cardtitle1_680245990" 
+field="li_title__1476897695209" 
+>КАЧЕСТВЕНныЕ МАТЕРИАЛЫ</h3><div class="t-card__descr t-descr t-descr_sm t-margin_auto" field="li_descr__1476897695209" >На основании установлен мотор на 12 (24) вольт с редуктором червячного типа, который можно привести в движение только со стороны якоря электродвигателя, откидные рамки для номеров благодаря этому отогнуть рукой невозможно.<br />Переключатель удерживается меньше секунды, пока рамка не перейдет из крайней позиции в другую.<br />Для более комфортного использования, можно дополнительно заказать пульт дистанционного управления, который повысит скрытность установленного откидного номера и прибавит комфорта.</div></div></div></div></div><div class="t509__col t-col t-col_6 t509__rightcol t509__desktopimg"><div class="t509__imgwrapper" style="max-width:700px;" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6463-6561-4263-b366-646261613261__-__resizeb__20x__photo.jpeg"><div class="t509__blockimg t-bgimg" data-original="images/tild6463-6561-4263-b366-646261613261__photo.jpeg" 
+bgimgfield="li_img__1476897695209" data-image-width="700" data-image-height="550px" 
+style="background-image:url('images/tild6463-6561-4263-b366-646261613261__-__resizeb__20x__photo.jpeg');"
+></div></div></div></div><div class="t509__separator t-clear" style=""></div><div class="t-item"><div class="t509__col t-col t-col_6 t509__mobileimg" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6231-3836-4334-a162-613536393762__-__resizeb__20x__photo.jpeg"><div class="t509__blockimg t-bgimg" data-original="images/tild6231-3836-4334-a162-613536393762__photo.jpeg" 
+bgimgfield="li_img__1504017084071" data-image-width="700" data-image-height="550px" 
+style="background-image:url('images/tild6231-3836-4334-a162-613536393762__-__resizeb__20x__photo.jpeg');"
+></div></div><div class="t509__col t-col t-col_6 t509__leftcol t509__desktopimg"><div class="t509__imgwrapper" style="max-width:700px;" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6231-3836-4334-a162-613536393762__-__resizeb__20x__photo.jpeg"><div class="t509__blockimg t-bgimg" data-original="images/tild6231-3836-4334-a162-613536393762__photo.jpeg" 
+bgimgfield="li_img__1504017084071" data-image-width="700" data-image-height="550px" 
+style="background-image:url('images/tild6231-3836-4334-a162-613536393762__-__resizeb__20x__photo.jpeg');"
+></div></div></div><div class="t509__col t-col t-col_6 t509__rightcol"><div class="t509__textwrapper t-align_left" style=""><div class="t509__content t-valign_middle"><div class="t509__box"><h3 
+class="t-card__title t-heading t-heading_xs t-margin_auto" 
+id="cardtitle2_680245990" 
+field="li_title__1504017084071" 
+>НАДЁЖНОСТЬ</h3><div class="t-card__descr t-descr t-descr_sm t-margin_auto" field="li_descr__1504017084071" >Так же для каждой рамки применяется Аргоновая сварка, благодаря чему мы в ответе за надёжность и наши откидные рамки прослужат вам годы.</div></div></div></div></div></div></div></div></div><script>t_onReady(function () {
+t_onFuncLoad('t509_setHeight', function () {
+window.addEventListener('resize', t_throttle(function () {
+t509_setHeight('680245990');
+}));
+t509_setHeight('680245990');
+var rec = document.querySelector('#rec680245990');
+if (!rec) return;
+var wrapper = rec.querySelector('.t509');
+if (wrapper) {
+wrapper.addEventListener('displayChanged', function () {
+t509_setHeight('680245990');
+});
+}
+});
+});</script><style> #rec680245990 .t-card__title { text-transform: uppercase; }</style></div><div id="rec681920720" class="r t-rec t-rec_pt_30" style="padding-top:30px; " data-record-type="170" ><!-- t156 --><!-- @classes: t-descr t-descr_xxs --><div class="t156"><div class="t-container"><div class="t-col t-col_12"><div class="t156__wrapper"><div class="t156__item" itemscope itemtype="http://schema.org/ImageObject"><img class="t-img" 
+imgfield="gi_img__0"
+src="images/tild6363-3731-4430-b438-613936613061__-__empty__img_2731-pkim1tlpdb-.png" data-original="images/tild6363-3731-4430-b438-613936613061__img_2731-pkim1tlpdb-.png" data-zoom-target="0" data-zoomable="yes" data-img-zoom-url="images/tild6363-3731-4430-b438-613936613061__img_2731-pkim1tlpdb-.png" data-img-zoom-descr="" 
+style="width:100%;"
+alt="Откидная рамка на прямом приводе"><meta itemprop="image" content="images/tild6363-3731-4430-b438-613936613061__img_2731-pkim1tlpdb-.png"><meta itemprop="caption" content="Откидная рамка на прямом приводе"></div><div style="width:20px;min-width:20px;"></div><div class="t156__item" itemscope itemtype="http://schema.org/ImageObject"><img class="t-img" 
+imgfield="gi_img__1"
+src="images/tild6137-3965-4764-a166-383032326563__-__empty__img_2733-transformed.png" data-original="images/tild6137-3965-4764-a166-383032326563__img_2733-transformed.png" data-zoom-target="1" data-zoomable="yes" data-img-zoom-url="images/tild6137-3965-4764-a166-383032326563__img_2733-transformed.png" data-img-zoom-descr="" 
+style="width:100%;"
+alt="Откидная рамка на прямом приводе"><meta itemprop="image" content="images/tild6137-3965-4764-a166-383032326563__img_2733-transformed.png"><meta itemprop="caption" content="Откидная рамка на прямом приводе"></div><div style="width:20px;min-width:20px;"></div><div class="t156__item" itemscope itemtype="http://schema.org/ImageObject"><img class="t-img" 
+imgfield="gi_img__2"
+src="images/tild6535-3431-4934-a132-386331393763__-__empty__2_2.jpg" data-original="images/tild6535-3431-4934-a132-386331393763__2_2.jpg" data-zoom-target="2" data-zoomable="yes" data-img-zoom-url="images/tild6535-3431-4934-a132-386331393763__2_2.jpg" data-img-zoom-descr="" 
+style="width:100%;"
+alt="Откидная рамка"><meta itemprop="image" content="images/tild6535-3431-4934-a132-386331393763__2_2.jpg"><meta itemprop="caption" content="Откидная рамка"></div></div></div></div></div></div><div id="rec680246171" class="r t-rec t-rec_pt_150 t-rec_pb_165" style="padding-top:150px;padding-bottom:165px; " data-record-type="497" ><!-- t497 --><div class="t497"><div class="t-section__container t-container"><div class="t-col t-col_12"><div class="t-section__topwrapper t-align_center"><h2 class="t-section__title t-title t-title_xs" field="btitle">ОТКИДНЫЕ РАМКИ ПРЯМОГО ПРИВОДА:</h2> <div class="t-section__descr t-descr t-descr_xl t-margin_auto" field="bdescr">ХАРАКТЕРИСТИКИ:</div> </div></div></div><ul role="list" class="t497__container t-container"><li class="t497__col t-col t-col_5 t-prefix_1 t497__col_first t-item t-list__item"
+style="margin-top:30px;"><div class="t497__item"><div class="t-cell t-valign_top"><div class="t497__imgwrapper" style="width:15px;"><img class="t497__img t-img" 
+src="images/tild6130-6139-4465-b232-666430386235__bullet.svg" 
+imgfield="li_img__1476973323713"
+alt=""></div></div><div class="t497__textwrapper t-cell t-valign_top"><div class="t497__descr t-descr t-descr_xs" field="li_descr__1476973323713">Габаритные размеры: Ш×В×Г <strong>19×7×8 см.</strong></div></div></div></li><li class="t497__col t-col t-col_5 t-item t-list__item"
+style="margin-top:30px;"><div class="t497__item"><div class="t-cell t-valign_top"><div class="t497__imgwrapper" style="width:15px;"><img class="t497__img t-img" 
+src="images/tild6361-3836-4538-a637-306464363461__bullet.svg" 
+imgfield="li_img__1476973326928"
+alt=""></div></div><div class="t497__textwrapper t-cell t-valign_top"><div class="t497__descr t-descr t-descr_xs" field="li_descr__1476973326928">Базовая комплектация: откидная рамка и кнопка в салон</div></div></div></li><li class="t497__col t-col t-col_5 t-prefix_1 t-item t-list__item"
+style="margin-top:30px;"><div class="t497__item"><div class="t-cell t-valign_top"><div class="t497__imgwrapper" style="width:15px;"><img class="t497__img t-img" 
+src="images/tild6562-3966-4335-a639-353839306531__bullet.svg" 
+imgfield="li_img__1476973352758"
+alt=""></div></div><div class="t497__textwrapper t-cell t-valign_top"><div class="t497__descr t-descr t-descr_xs" field="li_descr__1476973352758">Габаритные размеры откидной пластины: Ш×В <strong>24×8 см.</strong></div></div></div></li><li class="t497__col t-col t-col_5 t-item t-list__item"
+style="margin-top:30px;"><div class="t497__item"><div class="t-cell t-valign_top"><div class="t497__imgwrapper" style="width:15px;"><img class="t497__img t-img" 
+src="images/tild6634-6536-4166-b732-383737393261__bullet.svg" 
+imgfield="li_img__1476973363863"
+alt=""></div></div><div class="t497__textwrapper t-cell t-valign_top"><div class="t497__descr t-descr t-descr_xs" field="li_descr__1476973363863">Материал: сталь с порошковой покраской</div></div></div></li><li class="t497__col t-col t-col_5 t-prefix_1 t-item t-list__item"
+style="margin-top:30px;"><div class="t497__item"><div class="t-cell t-valign_top"><div class="t497__imgwrapper" style="width:15px;"><img class="t497__img t-img" 
+src="images/tild3431-3761-4939-a365-646339636231__bullet.svg" 
+imgfield="li_img__1476973375188"
+alt=""></div></div><div class="t497__textwrapper t-cell t-valign_top"><div class="t497__descr t-descr t-descr_xs" field="li_descr__1476973375188">Необходимое место для установки: 8 см.</div></div></div></li><li class="t497__col t-col t-col_5 t-item t-list__item"
+style="margin-top:30px;"><div class="t497__item"><div class="t-cell t-valign_top"><div class="t497__imgwrapper" style="width:15px;"><img class="t497__img t-img" 
+src="images/tild3866-3532-4533-b834-393662663336__bullet.svg" 
+imgfield="li_img__1503940260006"
+alt=""></div></div><div class="t497__textwrapper t-cell t-valign_top"><div class="t497__descr t-descr t-descr_xs" field="li_descr__1503940260006">Вес рамки: 1.3 кг.</div></div></div></li></ul></div><style> #rec680246171 .t497__descr { line-height: 1.4; }</style></div><div id="rec681921108" class="r t-rec t-rec_pt_165 t-rec_pb_165" style="padding-top:165px;padding-bottom:165px;background-color:#f2f2f2; " data-record-type="568" data-bg-color="#f2f2f2"><!-- T568 --><div class="t568"><div class="t-section__container t-container"><div class="t-col t-col_12"><div class="t-section__topwrapper t-align_center"><h2 class="t-section__title t-title t-title_xs" field="btitle">КАК ЗАКАЗАТЬ ОТКИДНЫЕ РАМКИ ДЛЯ НОМЕРОВ</h2> </div></div></div><div class="t-container"><div class="t568__col t-item t-col t-col_3"><div class="t568__numberwrapper"><div class="t568__circle" style="width: 50px; height: 50px; border-width: 0; background: #1779fa;"><div class="t568__number t-heading t-heading_xs" style="color: #ffffff;">1</div></div></div><div class="t568__textwrapper t-align_center"><div class="t568__title t-name t-name_xl" field="li_title__1480319654699">НАПИШИТЕ НАМ</div> <div class="t568__text t-text t-text_xs" field="li_descr__1480319654699">8-925-495-52-44<br />ramki12-24@mail.ru</div> </div></div><div class="t568__col t-item t-col t-col_3"><div class="t568__numberwrapper"><div class="t568__circle" style="width: 50px; height: 50px; border-width: 0; background: #1779fa;"><div class="t568__number t-heading t-heading_xs" style="color: #ffffff;">2</div></div></div><div class="t568__textwrapper t-align_center"><div class="t568__title t-name t-name_xl" field="li_title__1479899351902">ЗАКАЖИТЕ РАМКУ</div> <div class="t568__text t-text t-text_xs" field="li_descr__1479899351902">Выберите рамку <br />12v или 24v</div> </div></div><div class="t568__col t-item t-col t-col_3"><div class="t568__numberwrapper"><div class="t568__circle" style="width: 50px; height: 50px; border-width: 0; background: #1779fa;"><div class="t568__number t-heading t-heading_xs" style="color: #ffffff;">3</div></div></div><div class="t568__textwrapper t-align_center"><div class="t568__title t-name t-name_xl" field="li_title__1479899354500">МЫ СВЯЗЫВАЕМСЯ С ВАМИ</div> </div></div><div class="t568__col t-item t-col t-col_3"><div class="t568__numberwrapper"><div class="t568__circle" style="width: 50px; height: 50px; border-width: 0; background: #1779fa;"><div class="t568__number t-heading t-heading_xs" style="color: #ffffff;">4</div></div></div><div class="t568__textwrapper t-align_center"><div class="t568__title t-name t-name_xl" field="li_title__1503950179321">ОФОРМИМ ДОСТАВКУ</div> <div class="t568__text t-text t-text_xs" field="li_descr__1503950179321">Мы доставляем вам ваш заказ</div> </div></div></div></div><style>@media screen and (min-width: 480px) {
+#rec681921108 .t568__number {
+font-size: 22px;
+}
+}
+@media screen and (max-width: 480px) {
+#rec681921108 .t568__number {
+font-size: ;
+}
+}</style></div><div id="rec681921549" class="r t-rec t-rec_pt_150 t-rec_pb_150" style="padding-top:150px;padding-bottom:150px; " data-record-type="573" ><!-- t573--><div class="t573"><div class="t-container"><div class="t-col t-col_8 t-prefix_2 t-align_center"> <div class="t573__contacts t-title t-title_sm t-animate" data-animate-style="fadeindown" data-animate-group="yes" data-animate-order="1" field="text"><a href="tel:+79254955244">8-925-495-52-44</a></div><div class="t573__address t-text t-text_sm t-animate" data-animate-style="fadeindown" data-animate-group="yes" data-animate-order="2" data-animate-delay="0.3" field="text2">Также вы можете написать нам в социальных сетях:</div><div class="t-sociallinks"><ul role="list" class="t-sociallinks__wrapper" aria-label="Social media links"><!-- new soclinks --><li class="t-sociallinks__item t-sociallinks__item_telegram"><a href="https://t.me/miniramki" target="_blank" rel="nofollow" aria-label="Telegram" title="Telegram" style="width: 64px; height: 64px;"><svg class="t-sociallinks__svg" role="presentation" width=64px height=64px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm21.977-68.056c.386-4.38-4.24-2.576-4.24-2.576-3.415 1.414-6.937 2.85-10.497 4.302-11.04 4.503-22.444 9.155-32.159 13.734-5.268 1.932-2.184 3.864-2.184 3.864l8.351 2.577c3.855 1.16 5.91-.129 5.91-.129l17.988-12.238c6.424-4.38 4.882-.773 3.34.773l-13.49 12.882c-2.056 1.804-1.028 3.35-.129 4.123 2.55 2.249 8.82 6.364 11.557 8.16.712.467 1.185.778 1.292.858.642.515 4.111 2.834 6.424 2.319 2.313-.516 2.57-3.479 2.57-3.479l3.083-20.226c.462-3.511.993-6.886 1.417-9.582.4-2.546.705-4.485.767-5.362Z" fill="#20fa17"/></svg></a></li><li class="t-sociallinks__item t-sociallinks__item_whatsapp"><a href="https://wa.me/79254955244?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%21" target="_blank" rel="nofollow" aria-label="WhatsApp" title="WhatsApp" style="width: 64px; height: 64px;"><svg class="t-sociallinks__svg" role="presentation" width=64px height=64px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100ZM69.7626 28.9928C64.6172 23.841 57.7739 21.0027 50.4832 21C35.4616 21 23.2346 33.2252 23.2292 48.2522C23.2274 53.0557 24.4823 57.7446 26.8668 61.8769L23 76L37.4477 72.2105C41.4282 74.3822 45.9107 75.5262 50.4714 75.528H50.4823C65.5029 75.528 77.7299 63.301 77.7363 48.2749C77.7408 40.9915 74.9089 34.1446 69.7626 28.9928ZM62.9086 53.9588C62.2274 53.6178 58.8799 51.9708 58.2551 51.7435C57.6313 51.5161 57.1766 51.4024 56.7228 52.0845C56.269 52.7666 54.964 54.2998 54.5666 54.7545C54.1692 55.2092 53.7718 55.2656 53.0915 54.9246C52.9802 54.8688 52.8283 54.803 52.6409 54.7217C51.6819 54.3057 49.7905 53.4855 47.6151 51.5443C45.5907 49.7382 44.2239 47.5084 43.8265 46.8272C43.4291 46.1452 43.7837 45.7769 44.1248 45.4376C44.3292 45.2338 44.564 44.9478 44.7987 44.662C44.9157 44.5194 45.0328 44.3768 45.146 44.2445C45.4345 43.9075 45.56 43.6516 45.7302 43.3049C45.7607 43.2427 45.7926 43.1776 45.8272 43.1087C46.0545 42.654 45.9409 42.2565 45.7708 41.9155C45.6572 41.6877 45.0118 40.1167 44.4265 38.6923C44.1355 37.984 43.8594 37.3119 43.671 36.8592C43.1828 35.687 42.6883 35.69 42.2913 35.6924C42.2386 35.6928 42.1876 35.6931 42.1386 35.6906C41.7421 35.6706 41.2874 35.667 40.8336 35.667C40.3798 35.667 39.6423 35.837 39.0175 36.5191C38.9773 36.5631 38.9323 36.6111 38.8834 36.6633C38.1738 37.4209 36.634 39.0648 36.634 42.2002C36.634 45.544 39.062 48.7748 39.4124 49.2411L39.415 49.2444C39.4371 49.274 39.4767 49.3309 39.5333 49.4121C40.3462 50.5782 44.6615 56.7691 51.0481 59.5271C52.6732 60.2291 53.9409 60.6475 54.9303 60.9612C56.5618 61.4796 58.046 61.4068 59.22 61.2313C60.5286 61.0358 63.2487 59.5844 63.8161 57.9938C64.3836 56.4033 64.3836 55.0392 64.2136 54.7554C64.0764 54.5258 63.7545 54.3701 63.2776 54.1395C63.1633 54.0843 63.0401 54.0247 62.9086 53.9588Z" fill="#20fa17"/></svg></a></li><li class="t-sociallinks__item t-sociallinks__item_instagram"><a href="https://instagram.com/miniramki?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="nofollow" aria-label="Instagram" title="Instagram" style="width: 64px; height: 64px;"><svg class="t-sociallinks__svg" role="presentation" width=64px height=64px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100ZM25 39.3918C25 31.4558 31.4566 25 39.3918 25H60.6082C68.5442 25 75 31.4566 75 39.3918V60.8028C75 68.738 68.5442 75.1946 60.6082 75.1946H39.3918C31.4558 75.1946 25 68.738 25 60.8028V39.3918ZM36.9883 50.0054C36.9883 42.8847 42.8438 37.0922 50.0397 37.0922C57.2356 37.0922 63.0911 42.8847 63.0911 50.0054C63.0911 57.1252 57.2356 62.9177 50.0397 62.9177C42.843 62.9177 36.9883 57.1252 36.9883 50.0054ZM41.7422 50.0054C41.7422 54.5033 45.4641 58.1638 50.0397 58.1638C54.6153 58.1638 58.3372 54.5041 58.3372 50.0054C58.3372 45.5066 54.6145 41.8469 50.0397 41.8469C45.4641 41.8469 41.7422 45.5066 41.7422 50.0054ZM63.3248 39.6355C65.0208 39.6355 66.3956 38.2606 66.3956 36.5646C66.3956 34.8687 65.0208 33.4938 63.3248 33.4938C61.6288 33.4938 60.2539 34.8687 60.2539 36.5646C60.2539 38.2606 61.6288 39.6355 63.3248 39.6355Z" fill="#20fa17"/></svg></a></li><!-- /new soclinks --></ul></div></div></div></div><style> #rec681921549 .t573__contacts { color: #333333; } #rec681921549 .t573__address { color: #858585; padding-bottom: -10px; }</style></div><div id="rec678524787" class="r t-rec" style=" " data-animationappear="off" data-record-type="706" ><!--tcart--><!-- @classes: t-text t-text_xs t-name t-name_xs t-name_md t-btn t-btn_sm --><script>t_onReady(function () {
+setTimeout(function () {
+t_onFuncLoad('tcart__init', function () {
+tcart__init('678524787');
+});
+}, 50);
+var userAgent = navigator.userAgent.toLowerCase();
+var body = document.body;
+if (!body) return;
+/* fix Instagram iPhone keyboard bug */
+if (userAgent.indexOf('instagram') !== -1 && userAgent.indexOf('iphone') !== -1) {
+body.style.position = 'relative';
+}
+var rec = document.querySelector('#rec678524787');
+if (!rec) return;
+var cartWindow = rec.querySelector('.t706__cartwin,.t706__cartpage');
+var allRecords = document.querySelector('.t-records');
+var currentMode = allRecords.getAttribute('data-tilda-mode');
+if (cartWindow && currentMode !== 'edit' && currentMode !== 'preview') {
+cartWindow.addEventListener(
+'scroll',
+t_throttle(function () {
+if (window.lazy === 'y' || document.querySelector('#allrecords').getAttribute('data-tilda-lazy') === 'yes') {
+t_onFuncLoad('t_lazyload_update', function () {
+t_lazyload_update();
+});
+}
+}, 500)
+);
+}
+});</script><div class="t706" data-cart-countdown="yes" data-opencart-onorder="yes" data-project-currency="р." data-project-currency-side="r" data-project-currency-sep="," data-project-currency-code="RUB" ><div class="t706__carticon" style="right:25px;"><div class="t706__carticon-text t-name t-name_xs"></div> <div class="t706__carticon-wrapper"><div class="t706__carticon-imgwrap" ><svg role="img" class="t706__carticon-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path fill="none" stroke-width="2" stroke-miterlimit="10" d="M44 18h10v45H10V18h10z"/><path fill="none" stroke-width="2" stroke-miterlimit="10" d="M22 24V11c0-5.523 4.477-10 10-10s10 4.477 10 10v13"/></svg></div><div class="t706__carticon-counter js-carticon-counter" style="background-color:#ff623b;"></div></div></div><div class="t706__cartwin" style="display: none;"><div class="t706__close t706__cartwin-close"><button type="button" class="t706__close-button t706__cartwin-close-wrapper" aria-label="Закрыть корзину"><svg role="presentation" class="t706__close-icon t706__cartwin-close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd"><rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect><rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect></g></svg> </button> </div><div class="t706__cartwin-content"><div class="t706__cartwin-top"><div class="t706__cartwin-heading t-name t-name_xl"></div></div> <div class="t706__cartwin-products"></div><div class="t706__cartwin-bottom"><div class="t706__cartwin-prodamount-wrap t-descr t-descr_sm"><span class="t706__cartwin-prodamount-label"></span><span class="t706__cartwin-prodamount"></span></div></div> <div class="t706__orderform "> <form 
+id="form678524787" name='form678524787' role="form" action='' method='POST' data-formactiontype="2" data-inputbox=".t-input-group" data-success-url="https://ramki24v.ru/spasibo" 
+class="t-form js-form-proccess t-form_inputs-total_2 " data-formsended-callback="t706_onSuccessCallback" ><input type="hidden" name="formservices[]" value="5c8b7d8bec7853b039346aa2a697dd33" class="js-formaction-services"><input type="hidden" name="tildaspec-formname" tabindex="-1" value="Cart"><div class="js-successbox t-form__successbox t-text t-text_md" 
+aria-live="polite" 
+style="display:none;" data-success-message="Спасибо за заказ! Мы свяжемся с Вами в ближайшее время!" ></div><div class="t-form__inputsbox"><div 
+class="t-input-group t-input-group_nm " data-input-lid="1496239431201" data-field-type="nm"
+><label for='input_1496239431201' class="t-input-title t-descr t-descr_md" id="field-title_1496239431201" data-redactor-toolbar="no" field="li_title__1496239431201" style="color:;">Ваше имя</label><div class="t-input-block "><input type="text"
+autocomplete="name"
+name="Name"
+id="input_1496239431201"
+class="t-input js-tilda-rule "
+value="" data-tilda-req="1" aria-required="true" data-tilda-rule="name"
+aria-describedby="error_1496239431201"
+style="color:#000000;border:1px solid #000000;"><div class="t-input-error" aria-live="polite" id="error_1496239431201"></div></div></div><div 
+class="t-input-group t-input-group_ph " data-input-lid="1496239478607" data-field-type="ph"
+><label for='input_1496239478607' class="t-input-title t-descr t-descr_md" id="field-title_1496239478607" data-redactor-toolbar="no" field="li_title__1496239478607" style="color:;">Ваш телефон</label><div class="t-input-block "><input type="tel"
+autocomplete="tel"
+name="Phone"
+id="input_1496239478607"
+class="t-input js-tilda-rule "
+value="" data-tilda-req="1" aria-required="true" data-tilda-rule="phone"
+pattern="[0-9]*"
+aria-describedby="error_1496239478607"
+style="color:#000000;border:1px solid #000000;"><div class="t-input-error" aria-live="polite" id="error_1496239478607"></div></div></div><div class="t-form__errorbox-middle"><!--noindex--><div 
+class="js-errorbox-all t-form__errorbox-wrapper" 
+style="display:none;" data-nosnippet 
+tabindex="-1" 
+aria-label="Ошибки при заполнении формы"
+><ul 
+role="list" 
+class="t-form__errorbox-text t-text t-text_md"
+><li class="t-form__errorbox-item js-rule-error js-rule-error-all"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-req"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-email"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-name"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-phone"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-string"></li></ul></div><!--/noindex--> </div><div class="t-form__submit"><button
+type="submit"
+class="t-submit"
+style="color:#ffffff;background-color:#000000;" data-field="buttontitle" data-buttonfieldset="button"
+>Оформить заказ </button></div></div><div class="t-form__errorbox-bottom"><!--noindex--><div 
+class="js-errorbox-all t-form__errorbox-wrapper" 
+style="display:none;" data-nosnippet 
+tabindex="-1" 
+aria-label="Ошибки при заполнении формы"
+><ul 
+role="list" 
+class="t-form__errorbox-text t-text t-text_md"
+><li class="t-form__errorbox-item js-rule-error js-rule-error-all"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-req"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-email"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-name"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-phone"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-string"></li></ul></div><!--/noindex--> </div></form><style>#rec678524787 input::-webkit-input-placeholder {color:#000000; opacity: 0.5;}
+#rec678524787 input::-moz-placeholder {color:#000000; opacity: 0.5;}
+#rec678524787 input:-moz-placeholder {color:#000000; opacity: 0.5;}
+#rec678524787 input:-ms-input-placeholder {color:#000000; opacity: 0.5;}
+#rec678524787 textarea::-webkit-input-placeholder {color:#000000; opacity: 0.5;}
+#rec678524787 textarea::-moz-placeholder {color:#000000; opacity: 0.5;}
+#rec678524787 textarea:-moz-placeholder {color:#000000; opacity: 0.5;}
+#rec678524787 textarea:-ms-input-placeholder {color:#000000; opacity: 0.5;}</style></div></div> </div><div class="t706__cartdata"></div></div><style></style><style>.t-menuwidgeticons__cart .t-menuwidgeticons__icon-counter{
+background-color:#ff623b;
+}</style><!--/tcart--></div><div id="rec681921619" class="r t-rec t-rec_pb_0" style="padding-bottom:0px; " data-animationappear="off" data-record-type="898" ><div class="t898 t898_animate"
+style=""><div class="t898__wrapper"
+style=""><input type="checkbox" class="t898__btn_input" id="t898__btn_input_681921619" /><label for="t898__btn_input_681921619" class="t898__btn_label" style=""><svg role="presentation" class="t898__icon t898__icon-write" width="35" height="32" viewBox="0 0 35 32" xmlns="http://www.w3.org/2000/svg"><path d="M11.2667 12.6981H23.3667M11.2667 16.4717H23.3667M4.8104 23.5777C2.4311 21.1909 1 18.1215 1 14.7736C1 7.16679 8.38723 1 17.5 1C26.6128 1 34 7.16679 34 14.7736C34 22.3804 26.6128 28.5472 17.5 28.5472C15.6278 28.5472 13.8286 28.2868 12.1511 27.8072L12 27.7925L5.03333 31V23.8219L4.8104 23.5777Z" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" fill="none" /></svg><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="t898__icon t898__icon-close" viewBox="0 0 23 23"><g fillRule="evenodd"><path d="M10.314 -3.686H12.314V26.314H10.314z" transform="rotate(-45 11.314 11.314)" /><path d="M10.314 -3.686H12.314V26.314H10.314z" transform="rotate(45 11.314 11.314)" /></g></svg></label><!-- old soclinks --><a class="t898__icon t898__icon-whatsapp_wrapper t898__icon_link" href="https://wa.me/79254955244?text=Здравствуйте!%20Хочу%20сделать%20заказ:" target="_blank" rel="nofollow noopener noreferrer"><span class="t898__tooltip t-name t-name_xs">WhatsApp</span><svg role="presentation" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25 50a25 25 0 100-50 25 25 0 000 50z" fill="#fff" /><path d="M26.1 12a12.1 12.1 0 00-10.25 18.53l.29.46-1.22 4.46 4.57-1.2.45.27a12.1 12.1 0 106.16-22.51V12zm6.79 17.22c-.3.85-1.72 1.62-2.41 1.72-.62.1-1.4.14-2.25-.14-.7-.22-1.37-.47-2.03-.77-3.59-1.57-5.93-5.24-6.1-5.48-.19-.24-1.47-1.97-1.47-3.76 0-1.79.93-2.67 1.25-3.03.33-.37.72-.46.96-.46.23 0 .47 0 .68.02.22 0 .52-.09.8.62l1.1 2.7c.1.18.16.4.04.64s-.18.39-.36.6c-.18.21-.38.47-.54.64-.18.18-.36.38-.15.74.2.36.92 1.55 1.98 2.52 1.37 1.23 2.52 1.62 2.88 1.8.35.18.56.15.77-.1.2-.23.9-1.05 1.13-1.42.24-.36.48-.3.8-.18.33.12 2.09 1 2.44 1.18.36.19.6.28.69.43.09.15.09.88-.21 1.73z" fill="#27D061" /><path d="M25 0a25 25 0 100 50 25 25 0 000-50zm1.03 38.37c-2.42 0-4.8-.6-6.9-1.76l-7.67 2 2.05-7.45a14.3 14.3 0 01-1.93-7.2c0-7.92 6.49-14.38 14.45-14.38a14.4 14.4 0 110 28.79z" fill="#27D061" /></svg></a><!-- old soclinks --></div></div><style></style><script type="text/javascript">t_onReady(function() {
+t_onFuncLoad('t898_init', function() {
+t898_init('681921619');
+});
+});</script></div><!--footer--><footer id="t-footer" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="8277489" data-tilda-page-id="42199228" data-tilda-page-alias="footer" data-tilda-formskey="1cdbf2ce5a27eb1bd37d434728277489" data-tilda-cookie="no" data-tilda-lazy="yes" data-tilda-project-lang="RU" data-tilda-root-zone="com" data-tilda-project-headcode="yes" ><div id="rec682164048" class="r t-rec t-rec_pt_15 t-rec_pb_0" style="padding-top:15px;padding-bottom:0px;background-color:#171717; " data-animationappear="off" data-record-type="457" data-bg-color="#171717"><!-- T457 --><div class="t457"><div class="t-container"><div class="t-col t-col_12"><ul class="t457__ul"><li class="t457__li"><a href="/" data-menu-item-number="1">Главная</a></li><li class="t457__li"><a href="/about" data-menu-item-number="2">О нас</a></li><li class="t457__li"><a href="/popd" data-menu-item-number="3">Политика обработки персональных данных</a></li><li class="t457__li"><a href="/dostavka" data-menu-item-number="4">Доставка</a></li><li class="t457__li"><a href="/contact" data-menu-item-number="5">Контакты</a></li><li class="t457__li"><a href="/catalog" data-menu-item-number="6">КАТАЛОГ</a></li></ul></div><div class="t-col t-col_12"><div class="t457__copyright" field="text"><a href="tel:+79254955244">8-925-495-52-44</a><br /><br />ramki12-24@mail.ru</div></div></div></div><style>#rec682164048 .t457__copyright {
+color: #ffffff;
+}</style><style> #rec682164048 .t457__link { font-size: 28px; color: #ffffff; font-weight: 600; } #rec682164048 .t457__li a { color: #ffffff; }</style><style> #rec682164048 .t457__logo { color: #ffffff; font-weight: 600; } @media screen and (min-width: 480px) { #rec682164048 .t457__logo { font-size: 28px; } }</style></div></footer><!--/footer--></div><!--/allrecords-->

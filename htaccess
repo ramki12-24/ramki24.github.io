@@ -1,0 +1,48 @@
+ErrorDocument 403 /page42183738.html
+ErrorDocument 404 /page42183738.html
+
+DirectoryIndex page41975832.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://ramki24v\.ru/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =https
+RewriteCond %{HTTP_HOST} ^www\.ramki24v.ru [NC]
+RewriteRule ^(.*)$ https://ramki24v\.ru/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^home$ page41975832.html [NC]
+RewriteRule ^home/$ page41975832.html [NC]
+
+RewriteRule ^popd$ page42183689.html [NC]
+RewriteRule ^popd/$ page42183689.html [NC]
+
+RewriteRule ^sorry$ page42183738.html [NC]
+RewriteRule ^sorry/$ page42183738.html [NC]
+
+RewriteRule ^spasibo$ page42183774.html [NC]
+RewriteRule ^spasibo/$ page42183774.html [NC]
+
+RewriteRule ^about$ page42183805.html [NC]
+RewriteRule ^about/$ page42183805.html [NC]
+
+RewriteRule ^dostavka$ page42183980.html [NC]
+RewriteRule ^dostavka/$ page42183980.html [NC]
+
+RewriteRule ^contact$ page42185573.html [NC]
+RewriteRule ^contact/$ page42185573.html [NC]
+
+RewriteRule ^header$ page42198970.html [NC]
+RewriteRule ^header/$ page42198970.html [NC]
+
+RewriteRule ^footer$ page42199228.html [NC]
+RewriteRule ^footer/$ page42199228.html [NC]
+
+RewriteRule ^catalog$ page42659189.html [NC]
+RewriteRule ^catalog/$ page42659189.html [NC]
+
+
