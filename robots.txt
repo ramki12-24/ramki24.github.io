@@ -1,0 +1,25 @@
+User-Agent: *
+Disallow: /page42183689.html
+Disallow: /popd
+Disallow: /page42183738.html
+Disallow: /sorry
+Disallow: /page42198970.html
+Disallow: /header
+Disallow: /page42199228.html
+Disallow: /footer
+Disallow: /tilda/form*
+Disallow: /tilda/rec*
+Disallow: /tilda/click*
+Disallow: /tilda/scroll*
+Disallow: /tilda/popup*
+Disallow: /tilda/cart*
+Disallow: /tilda/product*
+Disallow: /tilda/event*
+Disallow: /*_escaped_fragment_*
+Disallow:
+
+
+Sitemap: https://ramki24v.ru/sitemap.xml
+Sitemap: https://ramki24v.ru/sitemap-store.xml
+Sitemap: https://ramki24v.ru/sitemap-feeds.xml
+Host: https://ramki24v.ru
